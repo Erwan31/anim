@@ -13,6 +13,7 @@ class Slide extends Component{
             classNames="item"
             timeout={500}
             key={i}
+            appear={true}
             onEntered={ (node)=>{
                 node.classList.add("active");
             }}
