@@ -100,11 +100,46 @@
   transform: translateX(100%);
 }
 
+
 /*=======================================
                 CSSTRANSITIONS
 ========================================*/
+.square.false{
+  background: red;
+  height: 100px;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.square.true{
+  background: pink;
+}
+
+.square.square-enter-active{
+  background: blue;
+}
+
+.square.square-exit-active{
+  background: green; 
+}
 
 /*=======================================
                 TRANSITIONS GROUP 
 ========================================*/
 
+.item{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in;
+}
+
+.item.active,
+.item-enter.item-enter-active{
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.item-exit.item-exit-active{
+  opacity: 0;
+  transform: translateX(-100%);
+}
